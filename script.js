@@ -80,7 +80,7 @@ function CheckBox(i){
 function TaskDelete(i){
   TaskArray.splice(i,1);
   console.log(TaskArray);
-  
+  editobj = "null";
   SaveTask();
   TaskDsply();
 };
@@ -99,7 +99,6 @@ function TaskEdit(i){
   const editButton = event.target;
   const taskDiv = editButton.closest('.task');
   taskDiv.style.background = 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,197,251,1) 25%, rgba(209,187,241,1) 51%, rgba(230,219,246,1) 78%, rgba(255,255,255,1) 100%)';
-
 };
 
 
